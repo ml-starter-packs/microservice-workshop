@@ -42,3 +42,28 @@ Tree: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/g
 
 Classic Notebook view. Use the button on the top right: `Run > Terminal`, but note that multiple terminals (which you may want) will require multiple tabs to view.
 
+## Running with Docker (locally)
+This project was set up to work with both mybinder.org and a local docker build which will launch `code-server` by default.
+To use it, run
+
+```bash
+docker build -t microservices-demo .
+docker run --name demo-env -p 5000:5000 microservices-demo
+```
+
+or using `docker-compose.yml`:
+```bash
+version: "3"
+
+services:
+  demo:
+    container_name: demo-env
+    image: microservices-demo
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "5000:5000"
+    command: code-server --auth none --bind-addr 0.0.0.0 --port 5000
+    #command: jupyter lab --ip 0.0.0.0 --port 5000
+```
