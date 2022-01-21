@@ -15,8 +15,8 @@ RUN adduser --disabled-password \
     ${NB_USER}
 WORKDIR ${HOME}
 USER ${NB_USER}
+ENV PATH /home/${NB_USER}/.local/bin:${PATH}
 COPY requirements.txt /tmp
 RUN pip install --no-cache -r /tmp/requirements.txt
 COPY postBuild /tmp
-ENV PATH /home/${NB_USER}/.local/bin:${PATH}
 RUN sh /tmp/postBuild
