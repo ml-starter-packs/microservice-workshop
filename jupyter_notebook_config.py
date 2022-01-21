@@ -17,8 +17,8 @@ c.ServerProxy.servers = {
   },
   'cgi': {
     'command': [
-        'cd', 'cgi-backend',
-        '&&', 'make'
+        'cd', 'flask-frontend/',
+        '&&', 'python', 'main.py'
   ],
   'port': 1337,
   'absolute_url': False,
