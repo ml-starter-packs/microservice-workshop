@@ -1,7 +1,10 @@
 FROM python:3.9-slim
-COPY apt.txt /tmp
 RUN apt-get update -q && \
-    cat /tmp/apt.txt | apt-get install --yes --no-install-recommends
+    apt-get install -yqq \
+    git \
+    nginx \
+    make
+ 
 ### create user with a home directory
 ARG NB_USER=jovyan
 ARG NB_UID=1000

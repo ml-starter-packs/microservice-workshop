@@ -1,3 +1,0 @@
-nginx
-git
-make
