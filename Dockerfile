@@ -15,7 +15,7 @@ RUN apt-get update -q && \
 	apt-get install -yqq \
 	curl \
 	git \
-    htop \
+	htop \
 	nginx \
 	make \
 	tmux \
