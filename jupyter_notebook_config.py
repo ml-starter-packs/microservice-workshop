@@ -15,16 +15,4 @@ c.ServerProxy.servers = {
         'title': 'VSCode',
         },
   },
-  'cgi': {
-    'command': [
-        'cd', '/home/jovyan/flask-frontend/',
-        '&&', 'python', 'main.py'
-  ],
-  'port': 1337,
-  'absolute_url': False,
-  'new_browser_tab': False,
-  'launcher_entry': {
-        'title': 'LEVEL 1',
-        }
-  }
 }

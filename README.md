@@ -8,3 +8,7 @@ Click on the badge above and you will be launched into a JupyterLab session.
 Your file system is visible on the left-panel, and "apps" are available in the center.
 Open a `Terminal` and start checking out the example repos!
 
+To visit services (html pages), change your url to end with `{unique-binder-id}/proxy/{PORT}/` (trailing slash included).
+
+Try out VSCode in the browser (add the Python extension) by clicking on the launcher entry.
+
