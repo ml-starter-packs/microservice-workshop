@@ -15,6 +15,7 @@ RUN apt-get update -q && \
 	apt-get install -yqq \
 	curl \
 	git \
+    htop \
 	nginx \
 	make \
 	vim \
