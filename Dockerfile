@@ -25,4 +25,5 @@ COPY requirements.txt /tmp
 RUN pip install -U pip
 RUN pip install --no-cache -r /tmp/requirements.txt
 COPY postBuild /tmp
+COPY jupyter_notebook_config.py /home/jovyan/.jupyter/
 RUN sh /tmp/postBuild
