@@ -1,6 +1,11 @@
 # microservice-workshop
 
-This repository hosts the computational environment required to run the repos listed in `postBuild` by leveraging [mybinder.org](https://mybinder.org), a free service which provides an ephemeral cloud computing environment.
+This repository hosts the computational environment required to run the following repos:
+- https://github.com/ml-starter-packs/flask-backend
+- https://github.com/ml-starter-packs/cgi-backend
+- https://github.com/ml-starter-packs/flask-frontend
+
+by leveraging [mybinder.org](https://mybinder.org), a free service which provides an ephemeral cloud computing environment.
 
 CLICK THIS:
 
