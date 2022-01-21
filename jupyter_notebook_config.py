@@ -17,7 +17,7 @@ c.ServerProxy.servers = {
   },
   'cgi': {
     'command': [
-        'cd', 'flask-frontend/',
+        'cd', '/home/jovyan/flask-frontend/',
         '&&', 'python', 'main.py'
   ],
   'port': 1337,
