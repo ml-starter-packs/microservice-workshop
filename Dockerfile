@@ -1,10 +1,11 @@
 FROM python:3.9-slim
 RUN apt-get update -q && \
-    apt-get install -yqq \
-    git \
-    nginx \
-    make \
-    vim
+	apt-get install -yqq \
+	curl \
+	git \
+	nginx \
+	make \
+	vim
  
 ### create user with a home directory
 ARG NB_USER=jovyan
@@ -13,9 +14,9 @@ ENV USER=${NB_USER}
 ENV HOME=/home/${NB_USER}
 
 RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
+	--gecos "Default user" \
+	--uid ${NB_UID} \
+	${NB_USER}
 WORKDIR ${HOME}
 USER ${NB_USER}
 ENV PATH="/home/${NB_USER}/.local/bin:${PATH}"
