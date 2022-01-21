@@ -10,6 +10,10 @@ ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
+    --shell /bin/bash \
     ${NB_USER}
 WORKDIR ${HOME}
-RUN pip install --no-cache notebook jupyterlab jupyter-server-proxy
+COPY requirements.txt /tmp
+RUN pip install --no-cache -r /tmp/requirements.txt
+COPY postBuild /tmp
+RUN sh /tmp/postBuild

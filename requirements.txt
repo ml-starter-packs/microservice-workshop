@@ -1,0 +1,3 @@
+notebook
+jupyterlab
+jupyter-server-proxy
