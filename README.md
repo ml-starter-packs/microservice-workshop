@@ -7,6 +7,7 @@ CLICK THIS:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=vscode/)
 
 `[Cmd/Ctrl] + Shift + P -> Add Folder to Workspace -> [Enter]`, and your home directory will show up on the left.
+
 To open the Terminal, `Ctrl + ^`.
 
 You may want to run `PS1=\$\ `, with `echo PS1=\"\$\ \" >> ~/.bashrc` for it to persist.
