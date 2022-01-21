@@ -18,6 +18,7 @@ RUN apt-get update -q && \
     htop \
 	nginx \
 	make \
+	tmux \
 	vim \
 	&& \
 	apt-get -qq purge && \
