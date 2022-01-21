@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=vscode/)
+
 # microservice-workshop
 
 This repository hosts the computational environment required to run the following repos:
@@ -7,9 +9,11 @@ This repository hosts the computational environment required to run the followin
 
 by leveraging [mybinder.org](https://mybinder.org), a free service which provides an ephemeral cloud computing environment.
 
-CLICK THIS:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=vscode/)
+# Playing in your Sandbox
+## `.../vscode`
+
+Code-Server: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=vscode/)
 
 `[Cmd/Ctrl] + Shift + P -> Add Folder to Workspace -> [Enter]`, and your home directory will show up on the left.
 
@@ -20,7 +24,7 @@ You may want to run `PS1=\$\ `, with `echo PS1=\"\$\ \" >> ~/.bashrc` for it to 
 To visit services (html pages), change your url to end with `{unique-binder-id}/proxy/{PORT}/` (trailing slash included).
 
 
-# Lab
+## `.../lab`
 
 Lab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=lab)
 
@@ -29,7 +33,7 @@ Your file system is visible on the left-panel, and "apps" are available in the c
 Open a `Terminal` and start checking out the example repos!
 
 
-# Tree
+### `.../tree`
 
 Classic Notebook view. Use the button on the top right: `Run > Terminal`, but note that multiple terminals (which you may want) will require multiple tabs to view.
 
