@@ -45,3 +45,5 @@ RUN pip install --no-cache -r /tmp/requirements.txt
 COPY postBuild /tmp
 COPY jupyter_notebook_config.py /home/${NB_USER}/.jupyter/
 RUN sh /tmp/postBuild
+
+CMD code-server --auth none --bind-addr 0.0.0.0 --port 5000
