@@ -17,4 +17,5 @@ USER ${NB_USER}
 COPY requirements.txt /tmp
 RUN pip install --no-cache -r /tmp/requirements.txt
 COPY postBuild /tmp
+ENV PATH /home/${NB_USER}/.local/bin:${PATH}
 RUN sh /tmp/postBuild
