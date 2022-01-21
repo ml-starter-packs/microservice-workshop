@@ -12,6 +12,12 @@ by leveraging [mybinder.org](https://mybinder.org), a free service which provide
 
 ## Developer Environments
 
+In your Terminal, you may want to run `PS1=\$\ `, with `echo PS1=\"\$\ \" >> ~/.bashrc` for it to persist.
+
+### `/proxy/.../`
+
+To visit services (html pages), change your url to end with `{unique-binder-id}/proxy/{PORT}/` (trailing slash included).
+
 ### `/vscode`
 
 Code-Server: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/microservice-workshop/main?urlpath=vscode/)
@@ -19,10 +25,6 @@ Code-Server: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.o
 `[Cmd/Ctrl] + Shift + P -> Add Folder to Workspace -> [Enter]`, and your home directory will show up on the left.
 
 To open the Terminal, `Ctrl + ^`.
-
-You may want to run `PS1=\$\ `, with `echo PS1=\"\$\ \" >> ~/.bashrc` for it to persist.
-
-To visit services (html pages), change your url to end with `{unique-binder-id}/proxy/{PORT}/` (trailing slash included).
 
 
 ### `/lab`
