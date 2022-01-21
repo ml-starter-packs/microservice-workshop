@@ -65,5 +65,12 @@ services:
     ports:
       - "5000:5000"
     command: code-server --auth none --bind-addr 0.0.0.0 --port 5000
-    #command: jupyter lab --ip 0.0.0.0 --port 5000
-```
+ ```
+
+If you wish to use jupyter lab / notebook, change the command to:
+
+`jupyter lab --ip 0.0.0.0 --port 5000`
+or
+`jupyter notebook --ip 0.0.0.0 --port 5000`
+
+and take note of the URL printed in your Terminal to handle authentication with the web application.
