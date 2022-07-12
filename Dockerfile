@@ -4,7 +4,7 @@ RUN apt-get update && \
 	curl && \
 	echo "getting latest install script" && \
 	curl -fsSL https://code-server.dev/install.sh > install.sh && \
-	sh install.sh && \
+	sh install.sh --version 4.4.0 && \
 	rm install.sh && \
 	apt-get -qq purge curl && \
 	apt-get -qq purge && \
