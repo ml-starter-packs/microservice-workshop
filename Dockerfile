@@ -48,4 +48,9 @@ COPY postBuild /tmp
 COPY jupyter_notebook_config.py /home/${NB_USER}/.jupyter/
 RUN sh /tmp/postBuild
 
+# fix permissions
+USER ${NB_USER}
+RUN chown -R ${NB_USER}:${NB_USER} /home/${NB_USER}/.jupyter/
+USER ${NB_USER}
+
 CMD code-server --auth none --bind-addr 0.0.0.0 --port 5000
