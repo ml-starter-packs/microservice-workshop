@@ -49,7 +49,7 @@ COPY jupyter_notebook_config.py /home/${NB_USER}/.jupyter/
 RUN sh /tmp/postBuild
 
 # fix permissions
-USER ${NB_USER}
+USER root
 RUN chown -R ${NB_USER}:${NB_USER} /home/${NB_USER}/.jupyter/
 USER ${NB_USER}
 
