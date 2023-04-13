@@ -71,6 +71,8 @@ jobs:
       # Build and push Docker image (don't push on PR)
       # Since buildx is used, annotations must be set via outputs (for now)
       # see https://github.com/docker/build-push-action/issues/447 for more
+      # provenance is to prevent unknown/unknown arch from being published, may be removed in future?
+      # see  https://github.com/docker/build-push-action/issues/820 for more
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
         id: build-and-push
@@ -78,6 +80,7 @@ jobs:
         with:
           context: build
           platforms: linux/amd64
+          provenance: false
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
